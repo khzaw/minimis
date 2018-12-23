@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>New Tab</title>
+</head>
+<style>
+  :root {
+    --background: #0f0f0f;
+    --text: whitesmoke;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    height: 100vh;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  time {
+    font-size: calc(20px + 5vw);
+    color: var(--text);
+  }
+</style>
+<body>
+  <time id="clock"></time>
+  <script src="./script.js"></script>
+</body>
+</html>
