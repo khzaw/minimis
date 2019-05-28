@@ -44,8 +44,13 @@
       }
     }
 
-    time {
+    time,
+    .full-stop {
       color: var(--highlight);
+    }
+
+    .full-stop {
+      margin-left: calc((40px + 2.5vw + 2.5vh) / -10);
     }
 
     .topass {
@@ -53,7 +58,10 @@
     }
   </style>
   <body>
-    <main>It&nbsp;is <time id="hour"></time><time id="minutes">k</time></main>
+    <main>
+      It&nbsp;is <time id="hour"></time><time id="minutes"></time
+      ><span class="full-stop">&#46;</span>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>
