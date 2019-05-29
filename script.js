@@ -82,7 +82,7 @@ const timeToText = _ => {
     } else if (hour === 12) {
       $minutes.innerHTML = ' noon';
     } else {
-      $minutes.innerHTML = ' <span class="topass">o\' </span>&nbsp;clock';
+      $minutes.innerHTML = ' <span class="topass">o\'</span>&nbsp;clock';
     }
   } else {
     if (minutes > 30) hour = hour + 1;
